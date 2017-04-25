@@ -775,6 +775,9 @@ public class DefaultCodegen {
      * returns string presentation of the example path (it's a constructor)
      */
     public DefaultCodegen() {
+
+    System.out.println("DefaultCodegen INIT");
+
         defaultIncludes = new HashSet<String>(
                 Arrays.asList("double",
                         "int",
