@@ -649,6 +649,8 @@ public class DefaultGenerator extends AbstractGenerator implements Generator {
     @Override
     public List<File> generate() {
 
+        LOGGER.info("############ generate ############");
+
         if (swagger == null || config == null) {
             throw new RuntimeException("missing swagger input or config!");
         }
