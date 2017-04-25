@@ -1969,8 +1969,8 @@ public class DefaultCodegen {
         op.hasConsumes = false;
         op.hasProduces = false;
 
-        LOGGER.info("unescapedNotes: " + op.unescapedNotes);
-        LOGGER.info("notes: " + op.notes);
+        LOGGER.warn("unescapedNotes: " + op.unescapedNotes);
+        LOGGER.warn("NOTES: " + op.notes);
 
         List<String> consumes = new ArrayList<String>();
         if (operation.getConsumes() != null) {
@@ -2715,7 +2715,7 @@ public class DefaultCodegen {
      * @param operation the operation object
      * @param path the path of the operation
      * @param httpMethod the HTTP method of the operation
-     * @return the (generated) operationId
+     * @return the (`generate`d) operationId
      */
     protected String getOrGenerateOperationId(Operation operation, String path, String httpMethod) {
         String operationId = operation.getOperationId();
