@@ -57,6 +57,8 @@ public class DefaultGenerator extends AbstractGenerator implements Generator {
             this.ignoreProcessor = new CodegenIgnoreProcessor(this.config.getOutputDir());
         }
 
+        LOGGER.info("OPTS: " + opts.getOpts().getProperties());
+
         return this;
     }
 
