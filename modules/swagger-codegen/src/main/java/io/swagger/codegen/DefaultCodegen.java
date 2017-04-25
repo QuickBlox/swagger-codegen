@@ -1969,8 +1969,8 @@ public class DefaultCodegen {
         op.hasConsumes = false;
         op.hasProduces = false;
 
-        LOGGER.debug("unescapedNotes: " + op.unescapedNotes);
-        LOGGER.debug("notes: " + op.notes);
+        System.out.println("unescapedNotes: " + op.unescapedNotes);
+        System.out.println("notes: " + op.notes);
 
         List<String> consumes = new ArrayList<String>();
         if (operation.getConsumes() != null) {
